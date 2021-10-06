@@ -8,7 +8,6 @@ namespace SimonGame
 {
     public class UI
     {
-
         public void Title()
         {
             Console.WriteLine(@"
@@ -35,7 +34,6 @@ namespace SimonGame
        | '--------------' || '--------------' || '--------------' || '--------------' |                   
         '----------------'  '----------------'  '----------------'  '----------------'                    
 ");
-
         }
 
         public void Exit()
@@ -54,7 +52,6 @@ namespace SimonGame
  +-+-+-+-+-+ +-+-+-+ +-+-+-+-+ +-+ +-+ +-+
  |S|O|R|R|Y| |Y|O|U| |L|O|S|T| |!| |!| |!|
  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ +-+ +-+ ");
-
 
         }
 
@@ -85,9 +82,8 @@ namespace SimonGame
         }
         public void StartSeq()
         {
-
             Title();
-            Thread.Sleep(3000);
+            Thread.Sleep(2000);   //Decrease display time
             Console.Clear();
 
             Console.CursorVisible = false;
@@ -110,8 +106,6 @@ namespace SimonGame
                 {
                     Console.Write(c);
                 }
-
-
             }
         }
     }
